@@ -1,0 +1,14 @@
+<Settings>
+    BoxLayout:
+        orientation: "vertical"
+        Button:
+            text: 'Back to Main'
+            on_press: print('change on settings'); root.set_cps(); root.manager.current = 'main'
+        TextInput:
+            id: cps
+            multiline: False
+            input_filter: 'float'
+            value: 0.1
+        #Button:
+            #text: 'Capture Hot Key'
+            #on_press: print('change on settings'); root.enableCaptureMode(); root.startCapture(); root.manager.current = 'capture'
